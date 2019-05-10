@@ -45,16 +45,17 @@
                 (!isset($this->exploder[2]) || is_not($this->exploder[2]) || empty($this->exploder[2]) ? 'index' : $this->exploder[2]);
         }
 
-        private function setParams(){
-            if ($this->onRaiz){
+        private function setParams()
+        {
+            if ($this->onRaiz) {
                 unset($this->exploder[0], $this->exploder[1]);
-            }else{
+            } else {
                 unset($this->exploder[0], $this->exploder[1], $this->exploder[2]);
             }
 
-          ##  if (end($this->exploder) == ){
+            ##  if (end($this->exploder) == ){
 
-            }
+            //}
         }
     }
 ?>;
