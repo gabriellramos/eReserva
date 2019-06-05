@@ -8,6 +8,16 @@
         private $controller;
         private $action;
         private $params;
+        private $runController;
+
+        public function __construct(){
+            $this->setUrl();
+            $this->setExploder();
+            $this->setArea();
+            $this->setController();
+            $this->setAction();
+            $this->setParams();
+        }
 
         private function setUrl(){
             $this->url = isset($_GET['url']) ? $_GET['url'] : 'home/index';
@@ -34,15 +44,27 @@
             }
         }
 
+        public function getArea(){
+            $this->area;
+        }
+
         private function setController(){
             $this->controller = $this->onRaiz ? $this->exploder[0] :
                 (empty($this->exploder[1]) || is_null($this->exploder[1] || !isset($this->exploder[1])  ? 'home' : $this->exploder[1]));
+        }
+
+        public getController(){
+            return $this->controller;
         }
 
         private function setAction(){
             $this->action = $this->onRaiz ?
                 (!isset($this->exploder[1]) || is_not($this->exploder[1]) || empty($this->exploder[1]) ? 'index' : $this->exploder[1]) :
                 (!isset($this->exploder[2]) || is_not($this->exploder[2]) || empty($this->exploder[2]) ? 'index' : $this->exploder[2]);
+        }
+
+        public function getAction(){
+            return $this->action;
         }
 
         private function setParams()
@@ -53,9 +75,47 @@
                 unset($this->exploder[0], $this->exploder[1], $this->exploder[2]);
             }
 
-            ##  if (end($this->exploder) == ){
+            if (end($this->exploder) == null){
+                arra_pop($this->exploder);
+            }
 
-            //}
+            if (empty($this->exploder)){
+                $this->params = array();
+            }else{
+                foreach ($this->exploder as $val){
+                    $params[] = $val;
+                }
+                $this->params = $params;
+            }
+        }
+
+        public function getParams($indice){
+            return isset($this->params[$indice] ? $this->params[$indice] : null;
+        }
+
+        private function validarController(){
+            if (!(class_exists($this->runController))){
+                die('Controller não existe '. $this->runController);
+            }
+        }
+
+        private function validarAction(){
+            if (!(class_exists($this->action))){
+                die('Action não existe '. $this->action);
+            }
+        }
+        public function Run(){
+            $this->runController = 'controller\\'. $this->area . '\\' . $this->controller . 'Controller';
+
+            $this->validarController();
+            
+            $this->runController = new $this->runController();
+
+            $this->validarAction();
+
+            $act = $this->action;
+
+            $this->runController->$act;
         }
     }
-?>;
+?>

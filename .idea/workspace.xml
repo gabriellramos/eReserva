@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bac5c290-e52d-4eef-a4db-47e574d3604a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/site/teste" afterDir="false" />
+    <list default="true" id="bac5c290-e52d-4eef-a4db-47e574d3604a" name="Default Changelist" comment="&quot;update 2&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/System.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/System.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,20 +40,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/System.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="51">
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controller/admin/teste.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/helper/Bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -59,6 +76,8 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/lib/Router.php" />
         <option value="$PROJECT_DIR$/lib/System.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/helper/Bootstrap.php" />
       </list>
     </option>
   </component>
@@ -68,7 +87,9 @@
     <option name="width" value="699" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -90,8 +111,7 @@
             <path>
               <item name="sistemaReserva" type="b2602c69:ProjectViewProjectNode" />
               <item name="sistemaReserva" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sistemaReserva" type="b2602c69:ProjectViewProjectNode" />
@@ -132,7 +152,10 @@
       <option name="presentableId" value="Default" />
       <updated>1557457651950</updated>
       <workItem from="1557457658157" duration="7121000" />
-      <workItem from="1557507908154" duration="1071000" />
+      <workItem from="1557507908154" duration="1365000" />
+      <workItem from="1557518074334" duration="598000" />
+      <workItem from="1557599252710" duration="1368000" />
+      <workItem from="1559696746934" duration="1401000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;first commit&quot;">
       <created>1557508065660</created>
@@ -169,11 +192,32 @@
       <option name="project" value="LOCAL" />
       <updated>1557508888519</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="&quot;update 1&quot;">
+      <created>1557508995363</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1557508995363</updated>
+    </task>
+    <task id="LOCAL-00007" summary="&quot;update 2&quot;">
+      <created>1557509055352</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1557509055352</updated>
+    </task>
+    <task id="LOCAL-00008" summary="&quot;update 2&quot;">
+      <created>1557509159114</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557509159114</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8192000" />
+    <option name="totallyTimeSpent" value="11853000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -185,11 +229,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.12102874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8095238" visible="true" weight="0.12556732" />
       <window_info id="Structure" order="1" sideWeight="0.50121063" side_tool="true" weight="0.12102874" />
-      <window_info id="Favorites" order="2" sideWeight="0.5024155" side_tool="true" visible="true" weight="0.12102874" />
+      <window_info id="Favorites" order="2" sideWeight="0.1904762" side_tool="true" visible="true" weight="0.12556732" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -199,9 +244,9 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49848714" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4977307" visible="true" weight="0.32242227" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.494705" weight="0.31950846" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4977307" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" visible="true" weight="0.32242227" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.505295" side_tool="true" weight="0.31950846" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.24962178" />
@@ -236,6 +281,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -243,16 +302,14 @@
     </ignored-roots>
     <MESSAGE value="&quot;first commit&quot;" />
     <MESSAGE value="&quot;update 1&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;update 1&quot;" />
+    <MESSAGE value="&quot;update 2&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;update 2&quot;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/Object.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Config.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
@@ -275,15 +332,28 @@
     <entry file="file://$PROJECT_DIR$/lib/Model.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/System.php">
+    <entry file="file://$PROJECT_DIR$/controller/admin/teste.txt" />
+    <entry file="file://$PROJECT_DIR$/controller/site/text.txt" />
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/admin/teste.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/lib/System.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helper/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
