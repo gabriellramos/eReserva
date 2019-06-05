@@ -53,8 +53,17 @@
                 (empty($this->exploder[1]) || is_null($this->exploder[1] || !isset($this->exploder[1])  ? 'home' : $this->exploder[1]));
         }
 
-        public getController(){
+        public function getController(){
             return $this->controller;
+        }
+
+        private function validarController(){
+            if (!(class_exists($this->runController))){
+                header("HTTP/1.0 404 Not Found");
+                define('ERROR', 'Não foi localizado o Controller: ' . $this->controller);
+                include ("content/{$this->area}/shared/404_error.phtml");
+                exit();
+            }
         }
 
         private function setAction(){
@@ -65,6 +74,15 @@
 
         public function getAction(){
             return $this->action;
+        }
+
+        private function validarAction(){
+            if (!(method_exists($this->runController, $this->action))){
+                header("HTTP/1.0 404 Not Found");
+                define('ERROR', 'Não foi localizado o Action: ' . $this->action);
+                include ("content/{$this->area}/shared/404_error.phtml");
+                exit();
+            }
         }
 
         private function setParams()
@@ -90,20 +108,9 @@
         }
 
         public function getParams($indice){
-            return isset($this->params[$indice] ? $this->params[$indice] : null;
+            return isset($this->params[$indice]) ? $this->params[$indice] : null;
         }
 
-        private function validarController(){
-            if (!(class_exists($this->runController))){
-                die('Controller não existe '. $this->runController);
-            }
-        }
-
-        private function validarAction(){
-            if (!(class_exists($this->action))){
-                die('Action não existe '. $this->action);
-            }
-        }
         public function Run(){
             $this->runController = 'controller\\'. $this->area . '\\' . $this->controller . 'Controller';
 
