@@ -10,7 +10,6 @@
 
         private $urlBase = APP_ROOT;
 
-        l
         protected  $routerOnRaiz = 'site';
 
         protected $onRaiz = true;
