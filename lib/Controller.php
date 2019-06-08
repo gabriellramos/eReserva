@@ -62,7 +62,6 @@ class Controller extends System{
             extract(array(
                 'controller' => (is_null($this->captionController) ? '' : $this->captionController),
                 'action' => (is_null($this->captionAction) ? '' : $this->captionAction),
-                  ),EXTR_PREFIX_ALL, 'caption');
-        }
+                  ),EXTR_PREFIX_ALL, 'caption');}
     }
 }
