@@ -1,6 +1,6 @@
 <?php
 
-define('APP_ROOT', 'admin');
+define('APP_ROOT', 'sistema_eReserva');
 
 require_once 'helper/Bootstrap.php';
 
