@@ -39,10 +39,9 @@ class Controller extends System{
         if (!file_exists($file)){
             die('Não foi localizado o arquivo '. $file);
         }
-
     }
 
-    publiv function view($render = null){
+    public function view($render = null){
         $this->title = is_null($this->title) ? 'Meu Título' : $this->title;
         $this->description = is_null($this->description) ? 'Minha Descrição' : $this->description;
         $this->keywords = is_null($this->keywords) ? 'Minha chave' : $this->keywords;
@@ -72,11 +71,11 @@ class Controller extends System{
         }
 
         if (!is_null($file) && is_array($file)){
-            foreach (($file as $li)){
+            foreach ($file as $li){
                 include ($li);
             }
         } else {
-            $file = is_null($file) : $this->path : $file;
+            $file = is_null($file) ? $this->path : $file;
             file_exists($file) ? include ($file) : die($file);
         }
     }

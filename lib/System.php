@@ -21,12 +21,10 @@
 
         private function setUrl(){
             $this->url = isset($_GET['url']) ? $_GET['url'] : 'home/index';
-
         }
 
         private function setExploder (){
             $this->exploder = explode('/', $this->url);
-
         }
 
         private function setArea(){
@@ -68,8 +66,8 @@
 
         private function setAction(){
             $this->action = $this->onRaiz ?
-                (!isset($this->exploder[1]) || is_not($this->exploder[1]) || empty($this->exploder[1]) ? 'index' : $this->exploder[1]) :
-                (!isset($this->exploder[2]) || is_not($this->exploder[2]) || empty($this->exploder[2]) ? 'index' : $this->exploder[2]);
+                (!isset($this->exploder[1]) || is_null($this->exploder[1]) || empty($this->exploder[1]) ? 'index' : $this->exploder[1]) :
+                (!isset($this->exploder[2]) || is_null($this->exploder[2]) || empty($this->exploder[2]) ? 'index' : $this->exploder[2]);
         }
 
         public function getAction(){
@@ -94,7 +92,7 @@
             }
 
             if (end($this->exploder) == null){
-                arra_pop($this->exploder);
+                array_pop($this->exploder);
             }
 
             if (empty($this->exploder)){
@@ -122,6 +120,6 @@
 
             $act = $this->action;
 
-            $this->runController->$act;
+            $this->runController = $act;
         }
     }

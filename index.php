@@ -1,6 +1,6 @@
 <?php
 
-define('APP_ROOT', 'site');
+define('APP_ROOT', 'admin');
 
 require_once 'helper/Bootstrap.php';
 
