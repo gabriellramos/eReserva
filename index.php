@@ -1,5 +1,7 @@
 <?php
 
+define('APP_ROOT', 'site');
+
 require_once 'helper/Bootstrap.php';
 
 use lib\System;
